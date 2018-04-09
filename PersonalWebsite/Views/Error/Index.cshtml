@@ -1,0 +1,47 @@
+﻿@section Stylesheets {
+    <link rel="stylesheet" type="text/css" href="css/error.css" />
+}
+
+@{
+    var message = "";
+    switch ((int)ViewData["ErrorCode"])
+    {
+        case 400:
+            ViewData["Title"] = "Bad Request";
+            message = "You seem to have submitted a bad request.";
+            break;
+        case 403:
+            ViewData["Title"] = "Forbidden";
+            message = "This action is forbidden.";
+            break;
+        case 404:
+            ViewData["Title"] = "Page Not Found";
+            message = "You seem to have found yourself in empty space!";
+            break;
+        case 408:
+            ViewData["Title"] = "Time Out";
+            message = "The server timed out waiting for your request.";
+            break;
+        case 500:
+            ViewData["Title"] = "Internal Server Error";
+            message = "We encountered an unexpected server error.";
+            break;
+        default:
+            ViewData["Title"] = "Error";
+            message = "An unexpected error occured.";
+            break;
+    }
+}
+
+<div class="container-fluid index-content">
+    <div class="full-background">
+        <div class="page-not-found-block">
+            <h1 class="page-not-found-message">@ViewData["ErrorCode"]</h1>
+            <h2 class="page-not-found-details">OOPS!</h2>
+            <h3 class="page-not-found-details">@message</h3>
+            <a href="/" class="btn btn-lg go-home-button">
+                <div class="go-home-button-text">GO HOME</div>
+            </a>
+        </div>
+    </div>
+</div>

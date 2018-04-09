@@ -1,0 +1,85 @@
+h1 {
+  font-size: 10vmin;
+}
+
+h2 {
+  font-size: 5vmin;
+}
+
+.index-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-background-image {
+  background-image: url('../images/SpaceX_Dark_Sky.bmp');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: inherit;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 93vh;
+}
+
+.full-background-image .row {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -110%);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.welcome-block {
+  position: relative;
+  top: 10%;
+}
+
+.welcome-message,
+.welcome-directions {
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
+  position: relative;
+  top: 30%;
+}
+
+.pleasure-button,
+.business-button {
+  margin: 10%;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-weight: 600;
+  background-color: #181c1f;
+  color: white;
+  border: 0;
+}
+
+.pleasure-button:focus,
+.pleasure-button:hover,
+.pleasure-button:active,
+.business-button:focus,
+.business-button:hover {
+  color: white;
+  outline: none !important;
+  box-shadow: 0px 0px 9px #72643a;
+}
+
+.pleasure-button-text,
+.business-button-text {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1px;
+}
+
+.pleasure-button-text:hover,
+.business-button-text:hover {
+  border-color: #ccac55;
+  color: white;
+}

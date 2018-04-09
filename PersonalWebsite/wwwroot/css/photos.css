@@ -1,0 +1,30 @@
+
+.small-photo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.small-photo-background:hover {
+  background-color: black;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.small-photo-background:hover .inspect-photo-icon {
+  display: block;
+}
+
+.inspect-photo-icon {
+  display: none;
+  position: absolute;
+  width: 20%;
+  height:20%;
+  left: 50%;
+  top: 50%;
+}
+
+.full-photo {
+  width: 80%
+  max-width: 100%;
+  max-height: 100%;
+}

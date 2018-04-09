@@ -1,0 +1,37 @@
+@media (max-width: 550px) {
+  .big-container {
+    display: none;
+  }
+
+  .small-container {
+    position: relative;
+    padding-bottom: 90.25%;
+    padding-top: 50%;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 550px) {
+  .small-container {
+    display: none;
+  }
+
+  .big-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 10%;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

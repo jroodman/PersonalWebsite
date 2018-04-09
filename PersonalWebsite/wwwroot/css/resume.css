@@ -1,0 +1,302 @@
+.side-profile {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@media(min-width: 576px) {
+    .affix {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.profile-image {
+    width: 80%;
+    margin: 3vh;
+}
+
+.profile-info {
+    color: white;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+h3.info {
+    font-size: 2vh;
+}
+
+.download-resume-button {
+    font-weight: 600;
+    font- background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 0;
+    box-shadow: 1px 1px 14px #5b5d5e;
+}
+
+    .download-resume-button:hover,
+    .download-resume-button:focus,
+    .download-resume-button:active {
+        background-color: #aa9049;
+        border-color: white;
+    }
+
+.resume-content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 3vh;
+    padding-right: 4vmin;
+}
+
+a.hidden-link {
+    color: white;
+    text-decoration: none;
+}
+
+h1.resume-hello {
+    font-size: 16vh;
+    margin-left: -10px;
+}
+
+.resume-description {
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+
+.resume-section {
+    padding: 0;
+    margin-bottom: 4vmin;
+}
+
+h3.resume-section-title {
+    font-size: 5vh;
+}
+
+.skill-container {
+    margin-bottom: 2vmin;
+}
+
+.skill-header {
+    margin-top: 1vmin;
+    font-size: 2.5vmin;
+}
+
+.skill-container .progress {
+    background-color: #fafafa;
+}
+
+.skill-progress {
+    background-color: #ccac55;
+}
+
+.project {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.project-thumbnail {
+    height: auto;
+    width: 100%;
+}
+
+.project-details {
+    background-color: #fafafa;
+    color: black;
+    padding: auto;
+    padding-top: 1em;
+    padding-bottom: .02em;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: .8em;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fafafa;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-box:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #fafafa;
+    border: 4px solid #ccac55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    padding-right: 40px;
+    padding-left: 1vw;
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    padding-right: 0;
+    padding-left: 40px;
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    right: 31px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fafafa;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: 31px;
+    border: medium solid #fafafa;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fafafa transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right:after {
+    left: -12px;
+}
+
+/* The actual content */
+.timeline-content {
+    padding: 10px 20px;
+    background-color: #fafafa;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media(max-width: 992px) {
+    /* Place the timelime to the left */
+    .timeline:after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-box:before {
+        left: 61px;
+        border: medium solid #fafafa;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fafafa transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left:after,
+    .right:after {
+        left: 19px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+.experience {
+    margin-top: 3vh;
+}
+
+.experience-icon {
+    height: 4.5em;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+}
+
+.spacex-icon {
+    height: auto;
+    width: 100%;
+    margin-left: .8em;
+}
+
+.ticketmaster-icon {
+    height: auto;
+    width: 100%;
+    margin-top: -.3em;
+    margin-bottom: -.5em;
+    transform: scale(1.25, 1.25);
+}
+
+.viterbi-icon {
+    margin-top: .3em;
+    transform: scale(1.25, 1.25);
+}
+
+h4.experience-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+h5.experience-sub-header {
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h6.experience-date {
+    font-size: .8em;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+h6.experience-location {
+    font-size: .8em;
+    font-weight: 200;
+    font-style: italic;
+}

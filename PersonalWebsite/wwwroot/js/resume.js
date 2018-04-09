@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $(window).scroll(function () {
 
-    var headerHeight = document.getElementsByTagName('header')[0].clientHeight
-    var mainHeight = document.getElementsByTagName('main')[0].clientHeight
-    var sideProfileHeight = document.getElementsByClassName("side-profile-container")[0].clientHeight
+      var headerHeight = document.getElementsByTagName('header')[0].clientHeight;
+      var mainHeight = document.getElementsByTagName('main')[0].clientHeight;
+      var sideProfileHeight = document.getElementsByClassName("side-profile-container")[0].clientHeight;
 
     if ($(window).scrollTop() > headerHeight) {
       $('.side-profile').addClass('affix');

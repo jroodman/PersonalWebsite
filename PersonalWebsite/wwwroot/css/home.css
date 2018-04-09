@@ -40,7 +40,7 @@ h2 {
 
 .welcome-message,
 .welcome-directions {
-  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -55,7 +55,7 @@ h2 {
 .pleasure-button,
 .business-button {
   margin: 10%;
-  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
   font-weight: 600;
   background-color: #181c1f;
   color: white;
@@ -69,7 +69,7 @@ h2 {
 .business-button:hover {
   color: white;
   outline: none !important;
-  box-shadow: 0px 0px 9px #72643a;
+  box-shadow: 0 0 9px #72643a;
 }
 
 .pleasure-button-text,

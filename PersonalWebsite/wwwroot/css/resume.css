@@ -21,13 +21,13 @@
     margin-bottom: 3vh;
 }
 
-h3.info {
+.info {
     font-size: 2vh;
 }
 
 .download-resume-button {
     font-weight: 600;
-    font- background-color: transparent;
+    background-color: transparent;
     color: white;
     border-color: white;
     border-radius: 0;
@@ -48,12 +48,12 @@ h3.info {
     padding-right: 4vmin;
 }
 
-a.hidden-link {
+.hidden-link {
     color: white;
     text-decoration: none;
 }
 
-h1.resume-hello {
+.resume-hello {
     font-size: 16vh;
     margin-left: -10px;
 }
@@ -68,7 +68,7 @@ h1.resume-hello {
     margin-bottom: 4vmin;
 }
 
-h3.resume-section-title {
+.resume-section-title {
     font-size: 5vh;
 }
 
@@ -102,7 +102,6 @@ h3.resume-section-title {
 .project-details {
     background-color: #fafafa;
     color: black;
-    padding: auto;
     padding-top: 1em;
     padding-bottom: .02em;
     padding-right: 1em;
@@ -238,7 +237,7 @@ h3.resume-section-title {
 
     /* Make all right containers behave like the left ones */
     .right {
-        left: 0%;
+        left: 0;
     }
 }
 
@@ -275,27 +274,27 @@ h3.resume-section-title {
     transform: scale(1.25, 1.25);
 }
 
-h4.experience-title {
+.experience-title {
     font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 3px;
     text-align: center;
 }
 
-h5.experience-sub-header {
+.experience-sub-header {
     font-size: 1.1em;
     font-weight: 400;
     text-align: center;
 }
 
-h6.experience-date {
+.experience-date {
     font-size: .8em;
     font-weight: 200;
     font-style: italic;
     margin-bottom: 0;
 }
 
-h6.experience-location {
+.experience-location {
     font-size: .8em;
     font-weight: 200;
     font-style: italic;

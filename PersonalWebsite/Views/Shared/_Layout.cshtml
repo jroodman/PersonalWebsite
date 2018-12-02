@@ -8,9 +8,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.0.0.min.css" />
 
-    <!-- AngularJS -->
-    <script type="text/javascript" src="js/dependencies/angular-1.6.7.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     @RenderSection("Stylesheets", required: false)
 
@@ -33,26 +30,31 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">JR</a>
+                <a class="navbar-brand" href="/">JR</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsToggleContainer" aria-controls="navbarsToggleContainer" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse" id="navbarsToggleContainer" aria-expanded="true" style="">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/resume">RESUME</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">BUSINESS</a>
+                            <div class="dropdown-menu nav-dropdown">
+                                <a class="dropdown-item" href="/resume">RESUME</a>
+                                <a class="dropdown-item" href="/contact">CONTACT</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/calendar">CALENDAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/books">BOOKS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/photos">PHOTOS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LEISURE</a>
+                            <div class="dropdown-menu nav-dropdown">
+                                <a class="dropdown-item" href="/calendar">CALENDAR</a>
+                                <a class="dropdown-item" href="/tennis">TENNIS</a>
+                                <a class="dropdown-item" href="/photos">PHOTOS</a>
+                                <a class="dropdown-item" href="/books">BOOKS</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
+            </div>
         </nav>
     </header>
 
@@ -70,22 +72,22 @@
                             PHONE:&nbsp;&nbsp;<span class="footer-number">+1 (314) 791-1267</span>
                         </li>
                         <li>
-                            EMAIL:&nbsp;&nbsp;<a class="footer-link" href="mailto:jason.roodman@gmail.com">JASON.ROODMAN@GMAIL.COM</a>
+                            EMAIL:&nbsp;&nbsp;<a class="footer-link" href="mailto:jason.j.roodman@gmail.com">JASON.J.ROODMAN@GMAIL.COM</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 middle-col-footer">
                     <h6 class="footer-title">SOCIAL MEDIA</h6>
-                    <a href="https://www.linkedin.com/in/jason-roodman-7a1644a7/">
+                    <a class="hidden-link" href="https://www.linkedin.com/in/jason-roodman-7a1644a7/">
                         <img class="social-icon linkedin-icon" src="images/icons/logo-linkedin.svg" alt="linkedin icon">
                     </a>
-                    <a href="https://github.com/jroodman">
+                    <a class="hidden-link" href="https://github.com/jroodman">
                         <img class="social-icon" src="images/icons/logo-github.svg" alt="github icon">
                     </a>
-                    <a href="https://www.facebook.com/jason.roodman">
+                    <a class="hidden-link" href="https://www.facebook.com/jason.roodman">
                         <img class="social-icon" src="images/icons/logo-facebook.svg" alt="facebook icon">
                     </a>
-                    <a href="https://www.instagram.com/jroody0722/">
+                    <a class="hidden-link" href="https://www.instagram.com/jroody0722/">
                         <img class="social-icon" src="images/icons/logo-instagram.svg" alt="instagram icon">
                     </a>
                 </div>
@@ -103,6 +105,9 @@
     <script type="text/javascript" src="~/js/dependencies/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="~/js/dependencies/popper-1.12.9.min.js"></script>
     <script type="text/javascript" src="~/js/dependencies/bootstrap-4.0.0.min.js"></script>
+    <script type="text/javascript" src="js/dependencies/angular-1.6.7.min.js"></script>
+    <script type="text/javascript" src="js/dependencies/angular-resource-1.6.7.min.js"></script>
+    <script type="text/javascript" src="js/dependencies/angular-route-1.6.7.min.js"></script>
     <script type="text/javascript" src="~/js/app.js"></script>
     @RenderSection("Scripts", required: false)
 </body>

@@ -28,4 +28,4 @@ If error is reported, run `docker-machine env default` and copy the listed comma
 
 2. If docker container has not been started
 
-Run `docker start`
+Run `docker-machine start default`

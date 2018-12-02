@@ -3,6 +3,8 @@ version: '3'
 services:
   personalwebsite:
     image: personalwebsite
+    ports: 
+      - '8000:80'
     build:
       context: .
       dockerfile: PersonalWebsite/Dockerfile

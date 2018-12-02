@@ -1,0 +1,111 @@
+.full-background {
+    background-image: url("../images/error_background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0 0 -16px 0;
+    min-height: 93vh;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form-header {
+    font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.contact-header {
+    font-weight: 550;
+    font-size: 3rem;
+    margin: 2vh auto 7px auto;
+}
+
+.contact-description {
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-form-container {
+    font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.form-label {
+    margin-bottom: 4px;
+}
+
+.message-area {
+    height: 25vh;
+}
+
+.alert {
+    display: inline-block;
+    padding: .3rem 1rem .3rem .7rem;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.alert-danger {
+    border-left: 5px solid red;
+}
+
+.message-sent-alert {
+    border-left: 5px solid green;
+}
+
+.message-sent-alert .close {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 900;
+}
+
+.submit-button {
+    font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: #5b5d5e;
+    color: white;
+    border-color: #5b5d5e;
+    outline: none;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: 0;
+}
+
+.submit-button.disabled {
+    opacity: .3;
+}
+
+.submit-button:not(.disabled):hover,
+.submit-button:not(.disabled):focus,
+.submit-button:not(.disabled):active {
+    background-color: #5b5d5e;
+    color: white;
+    box-shadow: 0 0 20px #72643a;
+    outline: none;
+    border: 0;
+}
+
+.submit-button-text {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1px;
+    color: white;
+}
+
+.submit-button-text:hover {
+    border-color: #ccac55;
+    color: white;
+}
+
+.field-validation-valid {
+    display: none;
+}

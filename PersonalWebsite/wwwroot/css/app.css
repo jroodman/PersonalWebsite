@@ -10,30 +10,29 @@ body {
   min-height: 100%;
 }
 
-main.site-main {
+.site-main {
   background-color: black;
 }
 
-footer.site-footer {
+.site-footer {
   margin: 0;
-  font-family: brandon-qrotesque-regular, Helvetica, sans-serif; !important;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif !important;
   background-color: #181c1f !important;
   color: white;
-  margin: 0;
 }
 
-h5.site-brand {
+.site-brand {
   font-weight: 500;
-  margin-bottom: .05em;
+  margin-bottom: .05rem;
 }
 
-h6.footer-title {
-  font-size: .8em;
+.footer-title {
+  font-size: .8rem;
   font-weight: 600;
 }
 
 .navbar {
-  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
   background-color: #181c1f !important;
 }
 
@@ -51,8 +50,26 @@ h6.footer-title {
 }
 
 .navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
-  border-bottom: 2px solid #ccac55;
-  padding-bottom: 1px;
+    border-bottom: 2px solid #ccac55;
+    padding-bottom: 1px;
+    background-color: #181c1f;
+}
+
+.nav-dropdown {
+    background-color: #181c1f;
+}
+
+.nav-dropdown .dropdown-item {
+    color: white;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .dropdown-toggle.active {
+    color: #ccac55;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-dropdown .dropdown-item.active {
+    color: #ccac55;
+    background-color: #181c1f;
 }
 
 .footer-content {
@@ -102,7 +119,7 @@ h6.footer-title {
 }
 
 .footer-text {
-  font-size: .65em;
+  font-size: .65rem;
   color: #8b939b;
 }
 
@@ -117,19 +134,19 @@ h6.footer-title {
 }
 
 .footer-number {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .footer-address {
-  font-size: .7em;
+  font-size: .7rem;
 }
 
 .social-icon {
-  background: black;
-  height: 1.4em;
-  width: 1.4em;
-  margin-left: .2em;
-  margin-right: .2em;
+  background: transparent;
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-left: .2rem;
+  margin-right: .2rem;
 }
 
 .linkedin-icon {
@@ -140,8 +157,14 @@ h6.footer-title {
   opacity: .7;
 }
 
+.hidden-link,
+.hidden-link:hover,
+.hidden-link:active {
+    text-decoration: none;
+}
+
 .footer-copyright {
-  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;;
+  font-family: brandon-qrotesque-regular, Helvetica, sans-serif;
   background-color: black;
   color: #666;
   height: 5vh;
@@ -150,5 +173,5 @@ h6.footer-title {
 .copyright-text {
   vertical-align: middle;
   padding-top: 1vh;
-  font-size: .7em;
+  font-size: .7rem;
 }

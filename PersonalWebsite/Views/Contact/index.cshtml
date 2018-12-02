@@ -1,0 +1,88 @@
+﻿@model PersonalWebsite.Models.EmailFormModel
+
+@section Stylesheets {
+    <link rel="stylesheet" type="text/css" href="~/css/contact.css" />
+}
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/dependencies/jquery.validate-1.17.0.min.js"></script>
+    <script type="text/javascript" src="~/js/contact.js"></script>
+}
+
+@{
+    ViewData["Title"] = "Jason Roodman - Contact";
+}
+<div class="full-background">
+
+    <div class="container-fluid">
+        <div class="contact-form-header">
+            <div class="row">
+                <h2 class="contact-header">Message Me About:</h2>
+            </div>
+            <div class="row">
+                <p class="col-sm-8 offset-sm-2 contact-description">
+                    My website - Books we have both read - Requests for prints of my photos - Freeelance opportunities - Or anything else!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid contact-form-container">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { novalidate = "" }))
+        {
+            @Html.AntiForgeryToken()
+            <div name="contactForm" class="contact-form css-form">
+                <div class="row contact-form-row">
+                    <div class="col-sm-6 form-group contact-input">
+                        <label class="form-label">NAME*</label><br>
+                        @Html.TextBoxFor(model => model.FromName, new { @class = "form-control", placeholder = "Your name", type = "text", name = "contactName", required = "" })
+                        @Html.ValidationMessageFor(model => model.FromName, null, new { @class = "error alert alert-danger", role = "alert" })
+                    </div>
+                    <div class="col-sm-6 form-group contact-input">
+                        <label class="form-label">EMAIL*</label><br>
+                        @Html.TextBoxFor(model => model.FromEmail, new { @class = "form-control", placeholder = "Your email", type = "text", name = "contactEmail", required = "" })
+                        @Html.ValidationMessageFor(model => model.FromEmail, null, new { @class = "error alert alert-danger", role = "alert" })
+                    </div>
+                </div>
+                <div class="row contact-form-row">
+                    <div class="col-sm-6 form-group contact-input">
+                        <label class="form-label">PHONE NUMBER</label><br>
+                        @Html.TextBoxFor(model => model.FromPhoneNumber, new { @class = "form-control", placeholder = "(xxx) xxx-xxxx", type = "text", name = "contactPhone" })
+                        @Html.ValidationMessageFor(model => model.FromPhoneNumber, null, new { @class = "error alert alert-danger", role = "alert" })
+                    </div>
+                    <div class="col-sm-6 form-group contact-input">
+                        <label class="form-label">SUBJECT*</label><br>
+                        @Html.TextBoxFor(model => model.Subject, new { @class = "form-control", placeholder = "Subject", type = "text", name = "subject", required = "" })
+                        @Html.ValidationMessageFor(model => model.Subject, null, new { @class = "error alert alert-danger", role = "alert" })
+                    </div>
+                </div>
+                <div class="row contact-form-row">
+                    <div class="col-sm-8 offset-sm-2 form-group contact-input">
+                        <label class="form-label">MESSAGE*</label><br>
+                        @Html.TextAreaFor(model => model.Message, new { @class = "form-control message-area", placeholder = "Enter Your Message Here.", type = "text", name = "message", required = "" })
+                        @Html.ValidationMessageFor(model => model.Message, null, new { @class = "error alert alert-danger", role = "alert" })
+                    </div>
+                </div>
+                <div class="row form-group contact-form-row">
+                    <button type="submit" class="btn submit-button">
+                        <div class="submit-button-text">SEND</div>
+                    </button>
+                </div>
+                @{
+                    if ((bool)ViewData["Sent"] == true)
+                    {
+                        <div class="row">
+                            <div class="col-sm-8 offset-sm-2 error alert alert-success fade show message-sent-alert" role="alert">
+                                Message successfully sent
+                                <button type="button" class="close" onclick="closeMessageSuccessAlert()" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        }
+    </div>
+
+</div>

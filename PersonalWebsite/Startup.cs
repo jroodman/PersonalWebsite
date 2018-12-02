@@ -22,6 +22,8 @@ namespace PersonalWebsite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddResponseCompression();
+            services.AddResponseCaching();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,6 +35,8 @@ namespace PersonalWebsite
                 //app.UseDeveloperExceptionPage();
             }
 
+            app.UseResponseCompression();
+            app.UseResponseCaching();
             app.UseStatusCodePagesWithReExecute("/Error/{0}");
             app.UseStaticFiles();
             app.UseMvc(routes =>
